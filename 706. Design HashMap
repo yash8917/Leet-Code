@@ -1,0 +1,18 @@
+class MyHashMap {
+    int[] ar=new int [1000001];
+    public MyHashMap() {
+        
+    }
+    
+    public void put(int key, int value) {
+      ar[key]=value+1;
+    }
+    
+    public int get(int key) {
+        return ar[key]-1;
+    }
+    
+    public void remove(int key) {
+        ar[key]=0;
+    }
+}
